@@ -1,134 +1,87 @@
-Absolutely 😭. Your repo is working; it just needs a **proper root README**.
+# 🚀 NSCC — Technical Domain Projects
 
-I’d make it look like an actual project submission rather than the generic GitHub page. Use this as your root `README.md`:
-
-````markdown
-# NSCC — Technical Domain Projects
-
-A collection of projects developed as part of the **NSCC Technical Domain** activities.
-
-This repository contains my web development projects, demonstrating the use of HTML, CSS, JavaScript, responsive design, DOM manipulation, form validation, and browser storage.
+A collection of projects developed as part of the **NSCC Technical Domain**.
 
 ---
 
-## 📁 Projects
+## 📂 Projects
 
-### 1. Personal Introduction Page
+### 🌐 01 — Personal Introduction Page
 
-A responsive personal introduction website created using fundamental web technologies.
+A responsive personal introduction website built with core web technologies.
 
-**Technologies:**
-- HTML5
-- CSS3
-- JavaScript
-- Responsive Design
-- DOM Manipulation
-- Event Listeners
-- LocalStorage
+**Tech Stack**
 
-**Includes:**
-- Personal introduction
-- About section
-- Interests
-- Highlights
-- Technology toolkit
-- Responsive layout
-- Interactive elements
+`HTML5` · `CSS3` · `JavaScript`
 
-📂 [`Personal Introduction Page`](./Personal%20Introduction%20Page/)
+**Features**
+
+- 👤 Personal introduction
+- 💡 Interests & highlights
+- 🛠️ Technology toolkit
+- 📱 Responsive design
+- ⚡ Interactive elements
+- 💾 LocalStorage
+
+👉 [View Project](<./Personal Introduction Page/>)
 
 ---
 
-### 2. Signup Form with Validation and Dashboard
+### 🔐 02 — Signup Form with Validation & Dashboard
 
-A web-based signup and dashboard application demonstrating client-side form validation, user data handling, and browser storage.
+A web application featuring user signup, form validation, dashboards, and client-side data storage.
 
-**Technologies:**
-- HTML5
-- CSS3
-- JavaScript
-- DOM Manipulation
-- Form Validation
-- LocalStorage
+**Tech Stack**
 
-**Includes:**
-- User signup form
-- Input validation
-- Dashboard
-- Admin login
-- Admin dashboard
-- User data management
-- LocalStorage-based data persistence
+`HTML5` · `CSS3` · `JavaScript`
 
-📂 [`Signup Form with Validation and Dashboard`](./Signup%20Form%20with%20Validation%20and%20Dashboard/)
+**Features**
+
+- 📝 Signup form
+- ✅ Form validation
+- 📊 User dashboard
+- 🔑 Admin login
+- 🖥️ Admin dashboard
+- 💾 LocalStorage
+- ⚡ Dynamic JavaScript interactions
+
+👉 [View Project](<./Signup Form with Validation and Dashboard/>)
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Page structure and semantic markup |
-| CSS3 | Styling, layouts, and responsive design |
-| JavaScript | Interactivity and application logic |
-| DOM API | Dynamic page manipulation |
-| LocalStorage | Client-side data persistence |
-| Git & GitHub | Version control and project hosting |
+| Technology | Used For |
+|---|---|
+| 🌐 HTML5 | Structure & markup |
+| 🎨 CSS3 | Styling & responsive layouts |
+| ⚡ JavaScript | Logic & interactivity |
+| 🧩 DOM | Dynamic content manipulation |
+| 💾 LocalStorage | Client-side data storage |
+| 📱 Responsive Design | Mobile & desktop compatibility |
 
 ---
 
-## 📂 Repository Structure
+## 📁 Repository Structure
 
 ```text
 NSCC/
+├── 📄 README.md
+├── ⚙️ .gitignore
 │
-├── .gitignore
-├── README.md
+├── 🌐 Personal Introduction Page/
+│   ├── 📄 index.html
+│   ├── 🎨 css/
+│   ├── ⚡ js/
+│   ├── 🖼️ assets/
+│   ├── 🎥 demo/
+│   └── 📸 screenshots/
 │
-├── Personal Introduction Page/
-│   ├── README.md
-│   ├── index.html
-│   ├── assets/
-│   ├── css/
-│   ├── js/
-│   ├── demo/
-│   └── screenshots/
-│
-└── Signup Form with Validation and Dashboard/
-    ├── README.md
-    ├── index.html
-    ├── dashboard.html
-    ├── admin.html
-    ├── css/
-    ├── js/
-    ├── demo/
-    └── screenshots/
-````
-
----
-
-## 🎯 Purpose
-
-These projects were developed to strengthen practical skills in frontend web development and to apply fundamental concepts including:
-
-* Responsive web design
-* Semantic HTML
-* CSS layouts and styling
-* JavaScript programming
-* DOM manipulation
-* Event handling
-* Form validation
-* Client-side storage
-* Basic project organization
-* Git version control
-
----
-
-## 👨‍💻 Author
-
-**Nameesh Shah**
-
-GitHub: [@nimiso0110](https://github.com/nimiso0110)
-
----
-
+└── 🔐 Signup Form with Validation and Dashboard/
+    ├── 📄 index.html
+    ├── 📊 dashboard.html
+    ├── 🔑 admin.html
+    ├── 🎨 css/
+    ├── ⚡ js/
+    ├── 🎥 demo/
+    └── 📸 screenshots/
