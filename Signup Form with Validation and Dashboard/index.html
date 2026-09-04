@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NSCC account registration">
+    <title>NSCC — Create account</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="public-page">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="auth-shell">
+        <section class="brand-panel">
+            <a class="brand" href="index.html" aria-label="NSCC home">
+                <span class="brand-mark">N</span>
+                <span>NSCC</span>
+            </a>
+
+            <div class="brand-copy">
+                <p class="eyebrow">NETWORK • SECURITY • COMMUNITY</p>
+                <h1>Build your identity.<br><em>Keep it yours.</em></h1>
+                <p class="lead">
+                    Create your NSCC account with a clean, secure registration flow
+                    designed for students and members.
+                </p>
+            </div>
+
+            <div class="feature-row">
+                <div><strong>01</strong><span>Validated details</span></div>
+                <div><strong>02</strong><span>Client-side hashing</span></div>
+                <div><strong>03</strong><span>Responsive by default</span></div>
+            </div>
+        </section>
+
+        <section class="form-panel">
+            <div class="mobile-brand">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark">N</span><span>NSCC</span>
+                </a>
+            </div>
+
+            <div class="form-heading">
+                <span class="status-dot"><i></i> Registration open</span>
+                <h2>Create your account</h2>
+                <p>It takes less than a minute.</p>
+            </div>
+
+            <form id="signupForm" novalidate>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-wrap">
+                        <input type="text" id="username" autocomplete="username"
+                               placeholder="e.g. alex_27" maxlength="30">
+                    </div>
+                    <small id="usernameError" class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <div class="input-wrap">
+                        <input type="email" id="email" autocomplete="email"
+                               placeholder="you@example.com">
+                    </div>
+                    <small id="emailError" class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-row">
+                        <label for="password">Password</label>
+                        <span id="passwordScore">—</span>
+                    </div>
+                    <div class="input-wrap password-wrap">
+                        <input type="password" id="password" autocomplete="new-password"
+                               placeholder="At least 8 characters">
+                        <button type="button" class="input-action" id="togglePassword"
+                                aria-label="Show password">Show</button>
+                    </div>
+                    <div class="strength-track" aria-hidden="true"><span id="strengthBar"></span></div>
+                    <small id="passwordError" class="field-error"></small>
+                </div>
+
+                <label class="check-row">
+                    <input type="checkbox" id="terms">
+                    <span>I agree to the registration terms.</span>
+                </label>
+                <small id="termsError" class="field-error"></small>
+
+                <button class="primary-btn" id="signupButton" type="submit">
+                    <span id="signupButtonText">Create account</span>
+                    <span class="spinner hidden" id="signupLoader"></span>
+                    <span class="arrow">↗</span>
+                </button>
+            </form>
+
+            <p id="successMessage" class="success-message" role="status"></p>
+
+            <div class="form-footer">
+                <span>Already registered?</span>
+                <a href="admin.html">Admin sign in <span>→</span></a>
+            </div>
+        </section>
+    </main>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="js/storage.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>

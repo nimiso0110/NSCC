@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NSCC administrator authentication">
+    <title>NSCC — Admin access</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-page">
+    <div class="admin-grid"></div>
+    <div class="ambient ambient-one"></div>
+
+    <main class="admin-shell">
+        <div class="admin-topbar">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">N</span><span>NSCC</span>
+            </a>
+            <span class="secure-label"><i></i> Restricted area</span>
+        </div>
+
+        <section class="admin-card">
+            <div class="lock-badge"><span>✦</span></div>
+            <p class="eyebrow">ADMIN CONSOLE / 01</p>
+            <h1>Welcome back.</h1>
+            <p class="admin-intro">Authenticate to access the member directory and administration tools.</p>
+
+            <form id="adminLoginForm" novalidate>
+                <div class="form-group">
+                    <label for="adminUsername">Administrator ID</label>
+                    <input type="text" id="adminUsername" autocomplete="username"
+                           placeholder="Enter administrator ID">
+                    <small id="usernameError" class="field-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="adminPassword">Passphrase</label>
+                    <div class="input-wrap password-wrap">
+                        <input type="password" id="adminPassword" autocomplete="current-password"
+                               placeholder="Enter passphrase">
+                        <button type="button" class="input-action" id="toggleAdminPassword">Show</button>
+                    </div>
+                    <small id="passwordError" class="field-error"></small>
+                </div>
+
+                <div id="loginError" class="login-alert hidden"></div>
+
+                <button class="primary-btn" id="loginButton" type="submit">
+                    <span id="loginButtonText">Sign in securely</span>
+                    <span class="spinner hidden" id="loginLoader"></span>
+                    <span class="arrow">↗</span>
+                </button>
+            </form>
+
+            <div class="security-note">
+                <span>◈</span>
+                <div><strong>Session protected</strong><br><small>Your admin session is stored only for this browser session.</small></div>
+            </div>
+
+            <a class="back-link" href="index.html">← Return to registration</a>
+        </section>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

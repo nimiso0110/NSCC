@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NSCC member administration dashboard">
+    <title>NSCC — Admin dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">N</span><span>NSCC</span>
+            </a>
+            <button class="mobile-close" id="closeSidebar" aria-label="Close menu">×</button>
+        </div>
+
+        <div class="workspace">
+            <span>WORKSPACE</span>
+            <strong>Member operations</strong>
+        </div>
+
+        <nav class="side-nav">
+            <a class="active" href="dashboard.html"><span>▦</span> Overview</a>
+            <a href="index.html"><span>＋</span> New member</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="admin-mini">
+                <span class="avatar" id="adminAvatar">M</span>
+                <div><strong id="adminName">meow</strong><small>Administrator</small></div>
+            </div>
+            <button id="logoutButton" class="logout-btn">Log out <span>↗</span></button>
+        </div>
+    </aside>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <main class="dashboard-main">
+        <header class="dash-header">
+            <button class="menu-btn" id="openSidebar" aria-label="Open menu">☰</button>
+            <div>
+                <p class="eyebrow">NSCC / ADMINISTRATION</p>
+                <h1>Member directory</h1>
+            </div>
+            <a href="index.html" class="outline-btn">+ Add member</a>
+        </header>
+
+        <section class="stats-grid">
+            <article class="stat-card">
+                <span class="stat-label">TOTAL MEMBERS</span>
+                <strong id="totalUsers">0</strong>
+                <small>Registered accounts</small>
+            </article>
+            <article class="stat-card">
+                <span class="stat-label">DIRECTORY STATUS</span>
+                <strong class="live-text"><i></i> Live</strong>
+                <small>Local data synchronized</small>
+            </article>
+            <article class="stat-card stat-card-accent">
+                <span class="stat-label">ADMIN SESSION</span>
+                <strong id="sessionTime">Active</strong>
+                <small id="sessionUser">Signed in as meow</small>
+            </article>
+        </section>
+
+        <section class="directory-card">
+            <div class="directory-head">
+                <div>
+                    <span class="eyebrow">MEMBERS</span>
+                    <h2>Registered accounts</h2>
+                </div>
+                <div class="directory-tools">
+                    <div class="search-box">
+                        <span>⌕</span>
+                        <input id="searchInput" type="search" placeholder="Search members...">
+                    </div>
+                    <button class="filter-btn" id="clearSearch">Clear</button>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MEMBER</th>
+                            <th>EMAIL</th>
+                            <th>CREATED</th>
+                            <th>SECURITY</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTableBody"></tbody>
+                </table>
+            </div>
+
+            <div id="emptyMessage" class="empty-state">
+                <div class="empty-icon">⌁</div>
+                <h3>No members yet</h3>
+                <p>Create your first account to populate the directory.</p>
+                <a href="index.html?from=admin" class="outline-btn">Create member</a>
+            </div>
+
+            <div id="noResults" class="empty-state hidden">
+                <div class="empty-icon">⌕</div>
+                <h3>No matches</h3>
+                <p>Try another username or email address.</p>
+            </div>
+
+            <div class="table-footer">
+                <span id="resultCount">0 members</span>
+                <span>Password values are never displayed.</span>
+            </div>
+        </section>
+
+        <footer class="dash-footer">
+            <span>NSCC Member Operations</span>
+            <span>Frontend demonstration • v2.0</span>
+        </footer>
+    </main>
+
+    <div class="modal-backdrop hidden" id="deleteModal">
+        <div class="confirm-modal">
+            <span class="warning-icon">!</span>
+            <p class="eyebrow">CONFIRM ACTION</p>
+            <h2>Remove this member?</h2>
+            <p>This will permanently remove the selected account from this browser's local directory.</p>
+            <div class="modal-actions">
+                <button class="secondary-btn" id="cancelDelete">Cancel</button>
+                <button class="danger-btn" id="confirmDelete">Remove member</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="js/storage.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
