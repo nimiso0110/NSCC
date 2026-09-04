@@ -1,46 +1,79 @@
-````markdown
-# NSCC Task 2 — Personal Introduction
+# NSCC Task 1 — Personal Introduction Page
 
-> A responsive, interactive personal introduction website built from HTML5, CSS3 and Vanilla JavaScript.
+> A responsive and interactive personal introduction website built using HTML5, CSS3, and Vanilla JavaScript.
 
-This project was created as part of the **NSCC Technical Domain — Task 2: Personal Introduction**.
+This project was developed as part of the **NSCC Technical Domain**.
 
-The goal was to build more than a static introduction page. The website combines personal content with responsive design, JavaScript-driven interactions, animations, accessibility considerations and persistent user preferences.
-
----
-
-## ✦ Overview
-
-The website presents my background, interests, experience and current technical direction through a custom-designed interactive interface.
-
-The design focuses on:
-
-- Clean visual hierarchy
-- Responsive layouts
-- Subtle motion and micro-interactions
-- Accessible navigation
-- Lightweight implementation
-- No unnecessary frameworks or dependencies
-
-The entire project is built using standard web technologies and can be run directly in a modern browser.
+The objective was to create a personal introduction website while demonstrating fundamental frontend development concepts such as semantic HTML, responsive CSS, JavaScript DOM manipulation, event handling, animations, accessibility, and browser-based storage.
 
 ---
 
-## ✦ Technologies
+## 🌐 Live Website
+
+**[🚀 View the Live Personal Introduction Page](https://nimiso0110.github.io/NSCC/Personal%20Introduction%20Page/)**
+
+---
+
+## 📌 Project Overview
+
+The Personal Introduction Page is a custom-designed single-page website that presents my background, interests, experience, activities, and current technical direction.
+
+Rather than relying on a frontend framework, the project was developed using the core technologies of the web:
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- DOM APIs
+- Browser APIs
+- LocalStorage
+
+The website combines a structured layout with interactive components, responsive behaviour, animations, theme switching, and mobile navigation.
+
+The project is completely client-side and does not require a backend, database, or external JavaScript framework.
+
+---
+
+## ✨ Highlights
+
+- 🎨 Custom visual design
+- 📱 Fully responsive layout
+- 🌙 Dark / Light theme switching
+- 💾 Persistent theme preference using `localStorage`
+- 🧭 Responsive navigation
+- 📱 Mobile navigation menu
+- ⚡ JavaScript-powered interactions
+- 👀 Scroll-based reveal animations
+- 🖱️ Pointer-responsive interactions
+- 🧲 Magnetic-style controls
+- 🌌 Animated background effects
+- 🔄 CSS-based animations
+- ♿ Reduced-motion support
+- 🖼️ Local profile image
+- 📸 Project screenshots
+- 🎥 Demonstration video
+- 🚫 No frontend framework required
+
+---
+
+# 🛠️ Technologies Used
 
 | Technology | Purpose |
 |---|---|
-| **HTML5** | Page structure and semantic content |
-| **CSS3** | Layout, responsive design, animations and visual system |
-| **Vanilla JavaScript** | Interactions and dynamic behaviour |
-| **DOM API** | Dynamic UI manipulation |
+| **HTML5** | Page structure and semantic markup |
+| **CSS3** | Styling, layout, animations and responsive design |
+| **Vanilla JavaScript** | Interactivity and dynamic behaviour |
+| **DOM API** | Dynamic manipulation of page elements |
 | **IntersectionObserver** | Scroll-based reveal animations |
 | **localStorage** | Persistent theme preference |
-| **CSS Media Queries** | Desktop, tablet and mobile responsiveness |
+| **CSS Media Queries** | Responsive layouts across screen sizes |
 
-### No framework dependency
+---
 
-This project does **not** require:
+## 🚫 No Framework Dependency
+
+This project intentionally uses the fundamentals of frontend development.
+
+It does **not** require:
 
 - React
 - Vue
@@ -49,394 +82,274 @@ This project does **not** require:
 - Bootstrap
 - jQuery
 - npm packages
-- External JavaScript frameworks
+- JavaScript frameworks
 
-It is intentionally implemented using the fundamentals of web development.
+The website can be opened directly in a browser without installing dependencies.
 
 ---
 
-# ✦ Features
+# 🎯 Objectives
 
-## 01 — Personal Introduction
+The main objectives of the project were to demonstrate:
 
-The hero section introduces the site and establishes the visual identity of the page.
+- Understanding of HTML structure
+- Semantic HTML implementation
+- CSS styling and layout
+- Responsive web design
+- JavaScript fundamentals
+- DOM manipulation
+- Event listeners
+- Browser APIs
+- Interactive UI development
+- CSS animations
+- JavaScript-driven animations
+- Theme persistence
+- Mobile navigation
+- Accessibility considerations
+- Proper project organization
+- Git and GitHub usage
 
-It includes:
+---
+
+# 🧩 Website Sections
+
+## 01 — Hero / Introduction
+
+The hero section acts as the primary introduction to the website.
+
+It establishes the visual identity of the page and provides the first overview of the profile.
+
+### Includes
 
 - Personal introduction
 - Profile photograph
 - Short description
-- Navigation
-- Visual background system
+- Primary navigation
 - Animated decorative elements
 - Responsive layout
+- Visual background effects
 
 ---
 
-## 02 — About Section
+## 02 — About
 
-A dedicated section provides additional context about my background, interests and current direction.
+The About section provides additional context about my background and current direction.
 
-The content is intentionally based on my actual experience rather than generic placeholder information.
+The content is designed around my actual interests and experience rather than generic placeholder information.
+
+The section helps establish the purpose and personality of the website while maintaining the overall visual language of the page.
 
 ---
 
-## 03 — Interactive Interests
+## 03 — Interests
 
-The website presents my primary technical and personal interests through interactive rows.
+The Interests section presents the areas I am currently interested in and exploring.
 
-Current areas include:
+### Technical Interests
 
 - Software Engineering
 - Cybersecurity
 - Ethical Hacking
-- Chess
 - Technology
-- Continuous Learning
+- Learning and experimentation
 
-The interaction uses pointer-responsive movement and transitions rather than relying on a simple `transform: scale()` hover effect.
+### Other Interests
+
+- Chess
+- Competitive tournament participation
+
+The section uses interactive UI elements rather than presenting the information as a simple static list.
 
 ---
 
 ## 04 — Experience & Highlights
 
-The website highlights relevant experience and activities, including:
+The Highlights section presents relevant activities, experience, and achievements.
+
+Examples include:
 
 - School Tech Club coordination
 - Technical Operations for an inter-state MUN
 - FIDE-rated chess tournament participation
 - Summer Internship Program in Ethical Hacking at IIT Kanpur
 
-The content avoids adding achievements that are not part of my actual experience.
+The section is designed to provide context without turning the website into a conventional resume.
 
 ---
 
 ## 05 — Current Toolkit
 
-A dedicated section presents the technologies and areas I am currently exploring.
+The Current Toolkit section presents technologies and technical areas that are relevant to my current learning and development.
 
-This section is designed to communicate technical interests without presenting the page as a conventional resume.
+The purpose of the section is to communicate the areas I am working with and exploring while keeping the presentation visually consistent with the rest of the website.
 
 ---
 
-# ✦ Interaction System
+# ⚡ Interaction System
 
-The website contains several layers of interaction.
+The website contains multiple interactive components implemented using JavaScript and CSS.
 
-### Theme Toggle
+---
 
-Users can switch between:
+## 🌙 Theme Toggle
+
+The website supports both:
 
 - Light mode
 - Dark mode
 
-The selected theme is saved locally so the preference survives a page refresh.
+The selected theme is stored using browser `localStorage`.
 
----
+This means the user's selected theme can persist after refreshing the page.
 
-### Mobile Navigation
+### Basic flow
 
-On smaller screens, the desktop navigation changes into a mobile navigation interface.
+```text
+User selects theme
+        ↓
+JavaScript updates theme
+        ↓
+Theme preference saved
+        ↓
+Page reload
+        ↓
+Saved preference restored
+📱 Mobile Navigation
 
-The menu can be opened and closed without requiring any external library.
+The navigation system adapts to smaller screen sizes.
 
-Navigation links also close the mobile menu when selected.
+On desktop screens, navigation links are displayed normally.
 
----
+On smaller screens, the navigation changes into a mobile-friendly menu.
 
-### Scroll Reveal
+The menu can be:
 
-Sections use the browser's native `IntersectionObserver` API.
+Opened
+Closed
+Navigated using links
 
-When an animated element enters the viewport:
+Navigation links also close the mobile menu after selection where appropriate.
 
-```javascript
+No external navigation library is required.
+
+👀 Scroll Reveal Animations
+
+The website uses the native browser IntersectionObserver API for scroll-based animations.
+
+Elements can transition into their visible state when they enter the viewport.
+
+A simplified representation of the mechanism is:
+
 element.classList.add("visible");
-````
 
-When it leaves the viewport:
+When the element leaves the viewport, the class can be removed:
 
-```javascript
 element.classList.remove("visible");
-```
 
-This allows animations to replay naturally when the user scrolls back through the page.
+This allows sections to animate naturally as the user scrolls through the page.
 
----
+🖱️ Pointer Interactions
 
-### Pointer Interactions
+Selected interface elements respond to pointer movement.
 
-Selected UI elements respond to pointer movement.
+The interactions are intentionally subtle so that the interface remains usable and visually clean.
 
-The effects are intentionally restrained so that the page feels interactive without becoming visually distracting.
+The goal is to provide additional feedback without making the page unnecessarily distracting.
 
----
+🧲 Magnetic Controls
 
-### Magnetic Controls
+Some controls use pointer position to create subtle movement.
 
-Selected controls use pointer position to create subtle magnetic movement.
+This gives important interactive elements additional visual feedback while keeping the implementation lightweight.
 
-This adds feedback to important interactive elements while keeping the interaction lightweight.
+🌌 Animated Background
 
----
+The visual background system uses CSS-based effects including:
 
-### Animated Background
+Gradients
+Grid patterns
+Ambient glow effects
+Decorative geometry
+Motion
+Layered visual elements
 
-The page uses a combination of:
+These effects are implemented without using a video background or heavy animation library.
 
-* CSS gradients
-* Grid patterns
-* Ambient glow effects
-* Motion
-* Decorative geometry
+🌀 Animated Orbit Elements
 
-These effects create depth without relying on a video background or heavy animation library.
+The profile area contains animated orbital/decorative elements.
 
----
+These effects are implemented using CSS animations rather than an external animation package.
 
-### Animated Orbit System
+This keeps the implementation lightweight and dependency-free.
 
-The profile photograph is accompanied by animated orbital elements.
+📱 Responsive Design
 
-These are implemented using CSS animations rather than an external animation package.
+The website is designed to work across different screen sizes.
 
----
+The layout adapts for:
 
-# ✦ Responsive Design
+🖥️ Desktop
+💻 Laptop
+📱 Mobile
+📟 Tablet-sized screens
 
-The website is designed to work across:
+Responsive behaviour is primarily handled through CSS media queries.
 
-* Desktop computers
-* Laptops
-* Tablets
-* Mobile phones
+Responsive considerations include
+Flexible layouts
+Scalable typography
+Mobile navigation
+Responsive spacing
+Flexible sections
+Adaptive controls
+Mobile-friendly interactions
+Responsive images
 
-Responsive behaviour is implemented using CSS media queries.
+The project uses a single responsive website rather than maintaining separate desktop and mobile versions.
 
-The layout adapts by changing:
+♿ Accessibility
 
-* Navigation behaviour
-* Typography scale
-* Content width
-* Section spacing
-* Grid layouts
-* Image sizing
-* Interactive elements
-* Mobile menu presentation
+Accessibility was considered during the development of the interface.
 
-The design does not depend on a fixed desktop viewport.
+The project includes considerations such as:
 
----
+Semantic HTML
+Keyboard-accessible controls
+Appropriate interactive elements
+Responsive navigation
+Reduced-motion support
+Clear visual hierarchy
+Readable text
+Sufficient spacing between interactive elements
+Reduced Motion
 
-# ✦ Mobile Experience
+The website takes reduced-motion preferences into account.
 
-The mobile version is treated as a separate layout rather than simply shrinking the desktop design.
+Users who prefer reduced motion should not be forced to experience unnecessary animations.
 
-On smaller screens:
+This helps make the interface more comfortable and accessible.
 
-* Navigation becomes mobile-friendly
-* Content stacks vertically
-* Typography scales down
-* Horizontal layouts become single-column layouts
-* Decorative elements are reduced where necessary
-* Interactive controls remain usable
-* Buttons and links remain touch-friendly
+🖼️ Profile Photograph
 
----
+The profile photograph is stored locally inside the project:
 
-# ✦ Accessibility & Motion
+assets/
+└── profile.png
 
-The project includes support for users who prefer reduced motion.
+The image is referenced using a relative path.
 
-The CSS respects:
+Because the image is stored inside the project itself, it works when the project is:
 
-```css
-@media (prefers-reduced-motion: reduce)
-```
+Opened locally
+Uploaded to GitHub
+Deployed using GitHub Pages
+Hosted using another static hosting service
 
-When reduced motion is enabled, unnecessary animations and transitions are reduced or disabled.
+No external image-hosting service is required.
 
-This prevents decorative animation from becoming a usability issue.
-
----
-
-# ✦ Theme Persistence
-
-Theme selection is stored using browser `localStorage`.
-
-The implementation follows this general flow:
-
-```text
-User changes theme
-        ↓
-Theme class is updated
-        ↓
-Preference is saved to localStorage
-        ↓
-Page is refreshed
-        ↓
-Saved preference is read
-        ↓
-Previous theme is restored
-```
-
-This means the selected theme is not lost when the page is refreshed.
-
----
-
-# ✦ JavaScript Concepts Demonstrated
-
-This project demonstrates several core JavaScript concepts.
-
-### DOM Manipulation
-
-JavaScript is used to:
-
-* Select HTML elements
-* Modify classes
-* Change attributes
-* Update text
-* Control navigation
-* Control the theme
-* Update interactive styles
-
----
-
-### Event Listeners
-
-Event listeners are used for:
-
-* Theme switching
-* Mobile navigation
-* Navigation links
-* Pointer movement
-* Interactive controls
-* UI state changes
-
-Example:
-
-```javascript
-element.addEventListener("click", handler);
-```
-
----
-
-### localStorage
-
-The browser's local storage API is used to persist the selected theme.
-
-```javascript
-localStorage.setItem("theme", theme);
-```
-
-and:
-
-```javascript
-localStorage.getItem("theme");
-```
-
----
-
-### IntersectionObserver
-
-The `IntersectionObserver` API is used for scroll-based animation.
-
-This avoids constantly checking the page position with a manual scroll loop.
-
----
-
-### CSS Class Manipulation
-
-JavaScript controls visual states primarily through CSS classes.
-
-For example:
-
-```javascript
-element.classList.add("visible");
-```
-
-and:
-
-```javascript
-element.classList.remove("visible");
-```
-
-This keeps presentation inside CSS while JavaScript handles behaviour.
-
----
-
-# ✦ Visual Design
-
-The visual language of the website intentionally combines a minimal editorial layout with a technical aesthetic.
-
-The design uses:
-
-* Strong typography
-* Large display headings
-* Structured spacing
-* Fine borders
-* Subtle gradients
-* Monochrome surfaces
-* Controlled accent colours
-* Grid-based background elements
-* Small motion details
-
-The objective was to create something that feels like a designed personal website rather than a basic HTML assignment.
-
----
-
-# ✦ Personal Content
-
-The website focuses on my actual interests and experience.
-
-### Technical Interests
-
-* Software Engineering
-* Cybersecurity
-* Ethical Hacking
-* Technology
-* Learning and experimentation
-
-### Other Interests
-
-* Chess
-* Competitive tournament participation
-
-### Experience & Activities
-
-* School Tech Club coordination
-* Technical Operations for an inter-state MUN
-* Summer Internship Program in Ethical Hacking at IIT Kanpur
-
-No unverified hackathon, workshop, IGDC or certification claims are intentionally included in the project.
-
----
-
-# ✦ Profile Photograph
-
-The profile photograph is stored locally inside:
-
-```text
-assets/profile.png
-```
-
-The website references it using a relative path.
-
-This means the image remains available when the project is:
-
-* Opened locally
-* Uploaded to GitHub
-* Hosted using GitHub Pages
-* Deployed using another static hosting provider
-
-No external image-hosting dependency is required.
-
----
-
-# ✦ Project Structure
-
-```text
-NSCC-Task-2-Personal-Introduction-FINAL/
+📁 Project Structure
+Personal Introduction Page/
 │
 ├── index.html
 ├── README.md
@@ -460,257 +373,317 @@ NSCC-Task-2-Personal-Introduction-FINAL/
 │
 └── demo/
     └── demo-video.mp4
-```
+📄 File Responsibilities
+index.html
 
----
+Contains the structure and content of the website.
 
-# ✦ How to Run
+It defines:
 
-## Option 1 — Open directly
+Navigation
+Hero section
+About section
+Interests
+Highlights
+Toolkit
+Footer / final section
+Interactive elements
+css/style.css
+
+Contains the visual styling and responsive behaviour.
+
+It handles:
+
+Typography
+Colours
+Layout
+Spacing
+Cards
+Navigation
+Animations
+Transitions
+Responsive layouts
+Theme styling
+Decorative effects
+js/script.js
+
+Contains the client-side interaction logic.
+
+It handles functionality such as:
+
+Theme switching
+LocalStorage
+Navigation interactions
+Mobile menu
+Scroll-based animations
+Pointer interactions
+Dynamic UI behaviour
+assets/profile.png
+
+Contains the profile photograph used by the website.
+
+screenshots/
+
+Contains screenshots documenting the completed website.
+
+screenshots/
+├── 01-hero.png
+├── 02-about.png
+├── 03-interests.png
+├── 04-highlights.png
+├── 05-toolkit.png
+└── 06-final.png
+demo/demo-video.mp4
+
+Contains a walkthrough demonstration of the completed website.
+
+🖥️ How to Run
+Option 1 — Open Directly
 
 No installation is required.
 
 Simply open:
 
-```text
 index.html
-```
 
-in a modern browser.
+in a modern web browser.
 
----
+Option 2 — VS Code + Live Server
 
-## Option 2 — VS Code + Live Server
+For development, the project can be opened in VS Code.
 
-1. Open the project folder in VS Code.
-2. Open `index.html`.
-3. Start Live Server.
-4. Open the generated local address in your browser.
+Steps
+Open the project folder in VS Code.
+Open index.html.
+Start Live Server.
+Open the generated local address in your browser.
 
 Live Server is optional and is only useful during development.
 
----
+🌐 Browser Compatibility
 
-# ✦ Browser Compatibility
-
-The project is intended for modern browsers supporting standard HTML5, CSS3 and JavaScript APIs.
+The website is intended for modern browsers that support standard HTML5, CSS3, and JavaScript APIs.
 
 Recommended browsers include:
 
-* Google Chrome
-* Microsoft Edge
-* Mozilla Firefox
-* Safari
+Google Chrome
+Microsoft Edge
+Mozilla Firefox
+Safari
 
-The website does not require any browser-specific plugin.
+The project does not require any browser-specific plugin.
 
----
-
-# ✦ Performance Approach
+⚡ Performance Approach
 
 The project intentionally avoids unnecessary dependencies.
 
 Performance considerations include:
 
-* No JavaScript framework
-* No animation library
-* No external runtime dependency
-* CSS-based animations
-* Native `IntersectionObserver`
-* Local assets
-* Lightweight DOM interactions
-* Responsive CSS rather than separate mobile pages
+No JavaScript framework
+No animation library
+No external runtime dependency
+CSS-based animations
+Native browser APIs
+Local assets
+Lightweight DOM interactions
+Responsive CSS
+No separate mobile application
+No backend processing
 
-The result is a small static website that can be hosted without a backend.
+The result is a lightweight static website that can be hosted without a server-side backend.
 
----
-
-# ✦ Screenshots
-
-The following screenshots document the main sections of the finished website.
-
-## 01 — Hero / Introduction
-
-![Hero section](screenshots/01-hero.png)
-
-The opening section introduces the website and establishes the overall visual system.
-
----
-
-## 02 — About
-
-![About section](screenshots/02-about.png)
-
-The About section provides additional personal and technical context.
-
----
-
-## 03 — Interests
-
-![Interests section](screenshots/03-interests.png)
-
-The interests section presents the main areas I am currently interested in.
-
----
-
-## 04 — Highlights
-
-![Highlights section](screenshots/04-highlights.png)
-
-The highlights section presents relevant experience, activities and achievements.
-
----
-
-## 05 — Current Toolkit
-
-![Current toolkit](screenshots/05-toolkit.png)
-
-The toolkit section presents the technologies and areas I am currently working with or learning.
-
----
-
-## 06 — Final Section
-
-![Final section](screenshots/06-final.png)
-
-The final section closes the introduction and provides the final navigation/action area.
-
----
-
-# ✦ Demo Video
+🎥 Demo Video
 
 A walkthrough of the completed website is included in:
 
-```text
 demo/demo-video.mp4
-```
 
 The demonstration covers:
 
-* Initial page load
-* Hero section
-* Navigation
-* Scrolling behaviour
-* Reveal animations
-* Interactive sections
-* Theme switching
-* Mobile navigation
-* Responsive behaviour
+Initial page load
+Hero section
+Navigation
+Scrolling behaviour
+Reveal animations
+Interactive sections
+Theme switching
+Mobile navigation
+Responsive behaviour
+📸 Screenshots
+01 — Hero / Introduction
 
----
+The opening section introduces the website and establishes the overall visual system.
 
-# ✦ Deployment
+02 — About
 
-This project is a static HTML/CSS/JavaScript website and does not require a server-side backend.
+The About section provides additional personal and technical context.
 
-It can be deployed using services such as:
+03 — Interests
 
-* GitHub Pages
-* Netlify
-* Vercel
-* Cloudflare Pages
-* Any static web hosting provider
+The Interests section presents the main areas I am currently interested in.
 
-### GitHub Pages
+04 — Highlights
 
-A typical deployment flow is:
+The Highlights section presents relevant activities, experience, and achievements.
 
-```text
-Project
-   ↓
-GitHub Repository
-   ↓
+05 — Current Toolkit
+
+The Toolkit section presents the technologies and areas I am currently working with or learning.
+
+06 — Final Section
+
+The final section closes the introduction and provides the final navigation/action area.
+
+🚀 Deployment
+
+This project is a static HTML/CSS/JavaScript website.
+
+It does not require:
+
+A backend
+A database
+Server-side code
+A build process
+npm packages
+
+It can therefore be deployed using static hosting services.
+
+Supported hosting options
 GitHub Pages
-   ↓
+Netlify
+Vercel
+Cloudflare Pages
+Other static hosting providers
+GitHub Pages
+
+The project is currently deployed using GitHub Pages.
+
+Live Website
+
+🌐 Open Personal Introduction Page
+
+Deployment Flow
+Local Project
+      ↓
+Git Repository
+      ↓
+GitHub
+      ↓
+GitHub Pages
+      ↓
 Public Website
-```
+📦 Repository
 
-After deployment, the live URL can be added below.
+The project is part of the NSCC repository.
 
----
+📁 View NSCC GitHub Repository
 
-## Live Demo
+🧪 Testing Checklist
+Functionality
+ Website loads correctly
+ Navigation works
+ Mobile navigation works
+ Theme toggle works
+ Theme preference is stored
+ Scroll interactions work
+ Interactive elements respond correctly
+ Local assets load correctly
+Responsive Design
+ Desktop layout
+ Laptop layout
+ Tablet-sized layout
+ Mobile layout
+ Responsive navigation
+ Responsive content sections
+ Responsive images
+Documentation
+ README
+ Project structure
+ Setup instructions
+ Technical explanation
+ Screenshots
+ Demo video
+ Live website
+ GitHub repository
+✅ Submission Checklist
+Core Requirements
+ Personal introduction
+ Personal photograph
+ HTML5 implementation
+ CSS3 implementation
+ Vanilla JavaScript
+ Responsive design
+ Mobile layout
+ DOM manipulation
+ Event listeners
+ Interactive navigation
+ Dark / Light mode
+ Theme persistence using localStorage
+ Scroll-based animations
+ CSS animations
+ Reduced-motion support
+Project Documentation
+ README
+ Project structure
+ Setup instructions
+ Technical explanation
+ Screenshots
+ Demo video
+ Live deployment URL
+ GitHub repository URL
+💡 Technical Summary
 
-**Live Demo:** `ADD-YOUR-LIVE-LINK-HERE`
+The project demonstrates how a complete interactive website can be created using the fundamental technologies of the web without relying on a frontend framework.
 
----
+The implementation follows a simple separation of responsibilities:
 
-## GitHub Repository
-
-**Repository:** `ADD-YOUR-GITHUB-REPOSITORY-LINK-HERE`
-
----
-
-# ✦ Submission Checklist
-
-### Core Requirements
-
-* [x] Personal introduction
-* [x] Personal photograph
-* [x] HTML5 implementation
-* [x] CSS3 implementation
-* [x] Vanilla JavaScript
-* [x] Responsive design
-* [x] Mobile layout
-* [x] JavaScript DOM manipulation
-* [x] Event listeners
-* [x] Interactive navigation
-* [x] Dark / Light mode
-* [x] Theme persistence with `localStorage`
-* [x] Scroll-based animations
-* [x] CSS animations
-* [x] Reduced-motion support
-
-### Project Documentation
-
-* [x] README
-* [x] Project structure
-* [x] Setup instructions
-* [x] Technical explanation
-* [x] Screenshots
-* [x] Demo video
-* [x] Personal content documentation
-
-### Final Submission
-
-* [ ] GitHub repository URL added
-* [ ] Live deployment URL added
-* [ ] Final project tested on desktop
-* [ ] Final project tested on mobile
-* [ ] All screenshots present
-* [ ] Demo video present
-* [ ] All relative paths verified
-
----
-
-# ✦ Final Notes
-
-This project was intentionally developed without a frontend framework in order to demonstrate a strong understanding of the fundamentals of web development.
-
-The implementation focuses on the relationship between:
-
-```text
 HTML
  ↓
-Structure
-
+Structure & Content
+ ↓
 CSS
  ↓
-Visual system + responsive layout + animation
-
+Visual Design & Responsive Layout
+ ↓
 JavaScript
  ↓
-Interaction + state + behaviour
-
-localStorage
+Interaction & Behaviour
  ↓
-Persistent user preference
+Browser APIs
+ ↓
+Persistence & Dynamic Features
 
+This approach keeps the project lightweight while providing enough functionality to demonstrate practical frontend development skills.
+
+🎓 Learning Outcomes
+
+Through this project, I worked with and strengthened my understanding of:
+
+HTML document structure
+Semantic HTML
+CSS layouts
+Responsive design
+CSS animations
+CSS transitions
+JavaScript fundamentals
+DOM manipulation
+Event listeners
+Browser APIs
 IntersectionObserver
- ↓
-Viewport-aware animation
-```
+LocalStorage
+Responsive navigation
+Accessibility considerations
+Static website deployment
+Git version control
+GitHub Pages
+👨‍💻 Author
 
-The final result is a lightweight, responsive and interactive personal introduction website that demonstrates both fundamental web-development concepts and attention to UI/UX.
+Nameesh Shah
 
----
+GitHub: @nimiso0110
+
+⭐ Final Note
+
+This project was intentionally developed using HTML5, CSS3, and Vanilla JavaScript to demonstrate a practical understanding of frontend fundamentals without relying on a frontend framework.
+
+The focus is on combining structure, styling, responsiveness, interaction, accessibility, and deployment into a complete working website.
