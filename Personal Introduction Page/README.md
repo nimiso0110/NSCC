@@ -1,4 +1,4 @@
-# NSCC Task 1 — Personal Introduction Page
+# NSCC Task 2 — Personal Introduction Page
 
 > A responsive and interactive personal introduction website built using HTML5, CSS3, and Vanilla JavaScript.
 
