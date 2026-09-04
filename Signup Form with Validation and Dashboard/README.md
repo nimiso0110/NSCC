@@ -7,6 +7,10 @@ The project implements the required signup flow, client-side validation, passwor
 
 ---
 
+## 🌐 Live Website
+
+**[🚀 Open the Signup Form & Dashboard](https://nimiso0110.github.io/NSCC/Signup%20Form%20with%20Validation%20and%20Dashboard/)**
+
 ## 📌 Task Objective
 
 > **Build a small web application for user signup, validation, and dashboard view.**
